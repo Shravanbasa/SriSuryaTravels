@@ -1,0 +1,198 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/logo.JPG" />
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/modernizr-3.5.0.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/aos.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="css/camera.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Sri Surya Travels - Gallery</title>
+    <style>
+        /* .loading {
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            position: fixed;
+            background-color: #fff;
+        }
+
+        .loader{
+            border: 0 solid transparent;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            top: calc(50vh - 75px);
+            left: calc(50vh - 75px);
+        }
+        .loader::before, .loader::after{
+            content: '';
+            border: 1em solid #ff5733;
+            border-radius: 50%;
+            width: inherit;
+            height: inherit;
+            position: absolute;
+            top: 0;
+            left: 0;
+            animation: loader 2s linear infinite;
+            opacity: 0;
+            background-image: url('./images/carloader.gif');
+        }
+        .loader::before{
+            animation-delay: 5s;
+        }
+        @keyframes loader{
+            0%{
+                transform: scale(0);
+                opacity: 0;
+            }
+            50%{
+                opacity: 1;
+            }
+            100%{
+                transform: scale(1);
+                opacity: 0;
+            }
+        } */
+        /* loader */
+        /* #content{display:none;}
+		#loader{
+			position: absolute;
+			margin: auto;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			width: 400px;
+			height: 400px;
+            z-index: 9999;
+		}
+		#loader img{width:100%;} */
+    </style>
+</head>
+
+<body>
+
+    <!-- <div id="loader">
+        <img src="images/carloader.gif" />
+    </div> -->
+    <div class="container-fluid pl-0 pr-0" id="content">
+        <div class="d-none d-lg-block d-md-block">
+            <nav class="bg-light bg-transparent navbar navbar-expand-lg navbar-light px-lg-5 shadow pt-lg-0">
+                <a class="navbar-brand" href="#"><img src="images/logo.JPG" style="height: 85px"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item pl-lg-4 pr-lg-4">
+                            <a class="nav-link font-weight-600 pt-3 pb-3" href="home.html">HOME <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item pl-lg-4 pr-lg-4">
+                            <a class="nav-link font-weight-600 pt-3 pb-3" href="about.html">ABOUT US</a>
+                        </li>
+                        <li class="nav-item pl-lg-4 pr-lg-4">
+                            <a class="nav-link font-weight-600 pt-3 pb-3" href="#services">SERVICES</a>
+                        </li>
+                        <li class="nav-item pl-lg-4 pr-lg-4 active">
+                            <a class="nav-link font-weight-600 pt-3 pb-3" href="gallery.html">GALLERY</a>
+                        </li>
+                        <li class="nav-item pl-lg-4 pr-lg-2">
+                            <a class="nav-link font-weight-600 btn btn-custom pl-4 pr-4 pt-3 pb-3" href="contact.html"
+                                style="border-radius: 0px;">CONTACT US</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+        </div>
+
+        <div class="d-block d-lg-none d-md-none">
+            <nav class="bg-transparent flex-nowrap navbar navbar-expand-md navbar-light pt-2 shadow">
+
+                <a class="navbar-brand" href="#"><img src="images/logo.JPG" style="height: 60px"></a>
+
+                <button class="navbar-toggler" type="button" data-toggle="modal" data-target="#sidebarModal">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
+            <div class="container-fluid">
+
+                <div class="modal left fade menu" id="sidebarModal" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog position-fixed m-auto" role="document"
+                        style="height: 100%;width: 100%;transform: translate3d(0%, 0, 0);">
+                        <div class="modal-content h-100" style="background: #141416 !important;">
+                            <div class="modal-footer">
+                                <div data-dismiss="modal" class="p-3"><img src="icons/close-cross.png"
+                                        style="background: #141416 !important;height: 30px;"></div>
+                            </div>
+                            <div class="modal-body p-3 mobile-menu">
+                                <div class="nav flex-column mt-5 text-center">
+                                    <a class="nav-item nav-link h1" href="home.html"
+                                        style="font-size: 30px;">Home</a>
+                                    <a href="about.html" class="nav-item nav-link h1 mt-4 text-white"
+                                        style="font-size: 30px;">About Us</a>
+                                    <a href="#services" class="nav-item nav-link h1 mt-4 text-white"
+                                        style="font-size: 30px;">Services</a>
+                                    <a href="gallery.html" class="active nav-item nav-link h1 mt-4 text-white"
+                                        style="font-size: 30px;">Gallery</a>
+                                    <a href="contact.html" class="nav-item nav-link h1 mt-4 text-white"
+                                        style="font-size: 30px;">Contact Us</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- container -->
+        </div>
+
+    </div>
+    <nav aria-label="breadcrumb px-lg-5" class="mt-4 mx-4 mx-lg-5">
+        <ol class="bg-transparent breadcrumb pl-0">
+            <li class="breadcrumb-item font-weight-600"><a href="home.html" class=" text-dark">Home</a></li>
+            <li class="breadcrumb-item active font-weight-600"><a href="gallery.html" class=" text-dark">Gallery</a></li>
+        </ol>
+    </nav>
+    <div class="container-fluid pl-0 pr-0 aos-init aos-animate" data-aos="fade-down" data-aos-duration="2000">
+        <div class="align-items-center mt-lg-3 mx-0 px-lg-5 row  mb-lg-5">
+            <div class="col-lg-3 pl-lg-0">
+                <div>
+                    <img src="images/Award-1.jpeg" class="img-thumbnail img-fluid">
+                </div>
+                
+            </div>
+            <div class="col-lg-3 mt-3 mt-lg-0 pr-lg-0">
+                <div>
+                    <img src="images/Award-2.jpeg" class="img-thumbnail img-fluid">
+
+                </div>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    </body>
+    </html>
